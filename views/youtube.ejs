@@ -1,0 +1,140 @@
+<% include topbar.ejs %>
+                <!-- START BREADCRUMB -->
+                <ul class="breadcrumb push-down-0" id="bread">
+                </ul>
+                <!-- END BREADCRUMB -->                
+                                
+                <!-- START CONTENT FRAME -->
+                <div class="content-frame">                                    
+                    <!-- START CONTENT FRAME TOP -->
+        <div class="row">
+            <div class="col-md-3">
+            </div>
+                        <div class="col-md-6" ng-controller="search">
+                            <div class="panel panel-default">
+                                <div class="panel-heading ui-draggable-handle">
+                                    <h3 style="text-align:center"><strong>Rechercher sur Youtube</strong></h3>
+                                </div>
+                                <!--
+                                <div class="panel-body">
+                                    <p>This is non libero bibendum, scelerisque arcu id, placerat nunc. Integer ullamcorper rutrum dui eget porta. Fusce enim dui, pulvinar a augue nec, dapibus hendrerit mauris. Praesent efficitur, elit non convallis faucibus, enim sapien suscipit mi, sit amet fringilla felis arcu id sem. Phasellus semper felis in odio convallis, et venenatis nisl posuere. Morbi non aliquet magna, a consectetur risus. Vivamus quis tellus eros. Nulla sagittis nisi sit amet orci consectetur laoreet. Vivamus volutpat erat ac vulputate laoreet. Phasellus eu ipsum massa.</p>
+                                </div>
+                            -->
+                                <div class="panel-body">                                                                        
+                                    
+                                    <div class="form-group">
+                                        <label class="col-md-3 col-xs-12 control-label"></label>
+                                        <div class="col-md-6 col-xs-12">                                            
+                                            <div class="input-group">
+                                                <span class="input-group-addon"><span class="fa fa-chevron-right"></span></span>
+                                                <input ng-keyup="$event.keyCode == 13 && send()" ng-model="query" class="form-control" type="text">
+                                            </div>                                          
+                                            <span class="help-block" id="query_error" style="color:red;display:{{error}};text-align:center">Le mot clef et vide</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                    <div class="panel-footer">
+                                               <center>        
+                                        <button class="btn btn-primary " ng-click="send()">rechercher</button>
+                                    </center>
+                                </div>
+                                </div>
+                    </div>
+        </div>
+        <div class="row">
+            <div class="col-md-3">
+            </div>
+
+                   <div class="col-md-6">
+                            
+                            <!-- CONTACT LIST WIDGET -->
+                           <div class="panel panel-default">
+                                <div class="panel-heading ui-draggable-handle">
+                                    <h3 style="text-align:center">video</h3>         
+                                </div>
+                                <div class="panel-body list-group list-group-contacts" ng-controller="youtube">
+                                   <a href="#" class="list-group-item" ng-if="!playlist[0]" style="text-align:center !important;color:red">                                 
+                                    
+                                      
+                                        <span class="contacts-title"> Aucun resultat </span>                                                                                                     
+                                    </a>                              
+                                    <a class="list-group-item" ng-repeat="item in playlist" data-url="{{item.link}}">                                 
+                            
+                                    <!--
+                                        <img src="{{item.img}}" class="pull-left" alt="{{item.title}}" style="min-height:30px">
+                                    -->
+                                        <span class="contacts-title" >{{item.title}}</span>  
+                                        </br>    
+                                        </br>                                                           
+                                        <div class="list-group-controls">
+                                            <button ng-click="play_item(item.link)" ng-if="!item.playing" class="btn btn-success"><span class="fa fa-play"></span></button>
+                                        </div>                                    
+                                    </a>     
+                                </div>
+                            </div>
+                            <!-- END CONTACT LIST WIDGET -->
+                                </div>
+                            </div>
+                   
+        </div>
+                <!-- END PAGE CONTENT FRAME -->
+		</div>
+            </div>            
+            <!-- END PAGE CONTENT -->
+        </div>  
+        <!-- START SCRIPTS -->
+        <!-- START PLUGINS -->
+        <script type="text/javascript" src="js/plugins/jquery/jquery.min.js"></script>
+        <script type="text/javascript" src="js/plugins/jquery/jquery-ui.min.js"></script>
+        <script type="text/javascript" src="js/plugins/bootstrap/bootstrap.min.js"></script>        
+        <script type="text/javascript" src="js/plugins/bootstrap/bootstrap.min.js"></script>   
+        <script type='text/javascript' src='/js/plugins/icheck/icheck.min.js'></script>
+        <script type="text/javascript" src="/js/plugins/mcustomscrollbar/jquery.mCustomScrollbar.min.js"></script>     
+
+        <!-- START TEMPLATE -->
+        <script type="text/javascript" src="/js/settings.js"></script>
+        <script type="text/javascript" src="/js/plugins.js"></script>        
+        <script type="text/javascript" src="/js/actions.js"></script> 
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.5/angular.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.5/angular-route.js"></script>   
+
+        <script src="https://cdn.socket.io/socket.io-1.4.5.js"></script>
+        <!-- END TEMPLATE -->
+    <!-- END SCRIPTS -->         
+    <script>
+        var socket = io.connect();
+       
+
+        var app = angular.module('streame', ['ngRoute']);
+    
+        socket.on('connect', function() {
+            socket.emit('authentification', 'controller');
+        });
+        app.controller('search', function($scope) {
+            $scope.query = '';
+            $scope.error = 'none';
+
+
+            $scope.send = function() {
+                if (!$scope.query)
+                    return $scope.error = 'block';
+                socket.emit('youtube-search', $scope.query);
+            }
+
+        });
+        app.controller('youtube', function($scope) {
+            $scope.playlist = [];
+
+            $scope.play_item = function(url) {
+                socket.emit('play-url', url);
+            }
+
+            socket.on('youtube-list', function(result) {
+                $scope.$apply(function() {
+                    $scope.playlist = result;
+                });
+            });
+        });
+    </script>
+    </body>
+</html>

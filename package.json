@@ -1,0 +1,25 @@
+{
+  "name": "streame",
+  "description": "remove streaming application",
+  "version": "0.2.0",
+  "private": true,
+  "main": "index.html",
+  "dependencies": {
+    "ejs": "^2.5.1",
+    "express": "^4.14.0",
+    "hsts": "^1.0.0",
+    "morgan": "^1.7.0",
+    "socket.io": "^1.4.8",
+    "socket.io-client": "^1.4.8",
+    "webchimera.js": "*",
+    "webgl-video-renderer": ">=0.2.0",
+    "youtube-crawler": "0.0.3",
+    "youtube-id": "^1.0.0",
+    "youtube-info": "^1.1.1"
+  },
+  "cmake-js": {
+    "runtime": "nw",
+    "runtimeVersion": "0.16.0"
+  },
+  "env": "development"
+}
