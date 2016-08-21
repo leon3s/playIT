@@ -23,12 +23,8 @@ Open source and developped by </br> <a href="http://leone-dev.com/"> leone devel
 
 <h4 align="center"> Core </h4>
 
-<p align="center">
-<ul align="center">
-	<li>
+<p align="center" style="color:red">
 		Auto update
-	</li>
-</ul>
 </p>
 
 #### Controller
