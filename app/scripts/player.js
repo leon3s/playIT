@@ -11,6 +11,12 @@ require('dns').lookup(require('os').hostname(), function (err, addr, fam) {
   $("#ip").text(addr);
 });
 
+var loading_screen = pleaseWait({
+  logo: "../public/img/leone_logo.png",
+  backgroundColor: 'white',
+  loadingHtml: '<h1 style="text-transform: uppercase;margin-top:-50px"><strong>leone developpement</strong></h1><div class="spinner" style="margin-top:-10px"><div class="double-bounce1"></div><div class="double-bounce2"></div></div>'
+});
+
 player.playlist.mode = 2;
 
 player.onFrameReady = function(frame) {
@@ -145,6 +151,7 @@ socket.on('controller', function(b) {
 
 socket.on('current-version', function(version_id) {
   $("#current_version").text(version_id);
+  loading_screen.finish();
 });
 
 socket.on('player:goto', function(p) {

@@ -13,7 +13,7 @@ var version = fs.readFileSync(path.join(__dirname, './version'), 'utf-8');
 if (os.platform() == 'win32')
 	process.env['VLC_PLUGIN_PATH'] = path.join(__dirname, 'node_modules/webchimera.js/plugins');
 // start everything //
-var app = fork(path.join(__dirname, './app/app.js'));
+require('./app/app');
 desktop_app.on("ready", function() {
 	win = new BrowserWindow({title:'PLAYIT', autoHideMenuBar: true, icon:path.join(__dirname, './icon.ico')});
 	//for win.setMenu(null);
@@ -27,5 +27,5 @@ desktop_app.on("ready", function() {
 });
 desktop_app.on('window-all-closed', function() {
 	desktop_app.quit();
-	app.kill('SIGINT');
+//	app.kill('SIGINT');
 });

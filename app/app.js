@@ -10,6 +10,7 @@ var update = require('../lib/update');
 var youtubeID = require('youtube-id');
 var youtubeInfo = require('youtube-info');
 var youtubeCrawler = require('../lib/youtube_crawler');
+var is_admin = require('../lib/is_admin');
 
 Object.defineProperty(Array.prototype, "removeItem", {
     enumerable: false,
@@ -205,13 +206,16 @@ webserver.io.on('connection', function(socket) {
 function	updater(socket) {
 	socket.emit('version:current', version);
 	update.is_updatable(function(lastest_version) {
-		// recheck //
 		if (lastest_version != false && lastest_version != version) {
 			socket.emit('version:lastest', lastest_version);
-			socket.on('update', function(b) {
-				update.update(this, function() {
-					fse.removeSync(path.join(__dirname, '../tmp.zip'));
-					socket.emit('update:done', true);
+			is_admin(function(b) {
+				socket.emit('is:admin', b);
+				if (!b) return;
+				socket.on('update', function(b) {
+					update.update(this, function() {
+						fse.removeSync(path.join(__dirname, '../tmp.zip'));
+						socket.emit('update:done', true);
+					});
 				});
 			});
 		}

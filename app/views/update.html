@@ -1,20 +1,24 @@
 <html>
 <link rel="stylesheet" type="text/css" href="../public/css/electron_desktop.css"/>
+<link rel="stylesheet" type="text/css" href="../public/js/plugins/please-wait/please-wait.css"/>
 <body style="background-color:black">
 	<div class="overlay" style="text-align:center">
 		<div style="position:absolute;top:0px;left:0px;color:orange">version: <span style="color:orange" id="version_current"></span></div>
 		<div style="color:white;margin-top:10%;">
 			<img wdith="200" height="200" src="../public/img/icon.png" style="margin:-20px"></img>
-			<h2><strong id="overlay-title" style="margin:-40px"> PLAY IT </strong></h2>
+			<h2><strong id="overlay-title" style="margin:-40px">PLAYIT</strong></h2>
 			<code style="color:red" id="update_text">Une mise a jour et requise</code>
 			</br>
-			<code style="color:orange">[<code id="version_lastest"></code>]</code>
+			<code id="admin" style="display:none">relancer en mode administrateur pour continuer</code>
+			</br>
+			<code style="color:orange">nouvelle version [<code id="version_lastest"></code>]</code>
 			</br>
 			</br>
 			<button id="update">Mettre a jours</button>
 			<progress style="display:none" id="update_progress" value="0" max="100"></progress>
 		</div>
 	</div>
+	<script src="../public/js/plugins/please-wait/please-wait.min.js"></script>
 	<script src="../public/js/plugins/socket.io/socket.io.min.js"> </script>
 	<script src="../scripts/update.js">
 	</script>

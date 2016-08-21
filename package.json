@@ -19,5 +19,9 @@
     "youtube-id": "^1.0.0",
     "youtube-info": "^1.1.1"
   },
-  "env": "production"
+  "env": "production",
+  "scripts" : {
+    "pack:win32" : "electron-packager.cmd . PLAYIT --arch=ia32 --platform=win32 --version=0.36.7 --icon=./icon.ico --version-string.ProductName=\"PLAYIT\" --version-string.CompanyName=\"Leone Developpement\" --version-string.FileDescription=\"PLAYIT\" --version-string.OriginalFilename=\"playit.exe\" --version-string.InternalName=\"PLAYIT\" --out=\"./dist/\"",
+    "dev": "./../electron/electron.exe main.js"
+  }
 }
