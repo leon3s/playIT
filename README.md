@@ -5,38 +5,38 @@ Desktop application to controll audio / video player remotely using application 
 Open source and developped by [leone](http://leone-dev.com/)
 
 # Download
-* For windows you can download msi [here](http://leone-dev.com/playit)
-* [linux](http://leone-dev.com/playit) soon
-* [mac](http://leone-dev.com/playit) soon
+###### For windows you can download msi [here](http://leone-dev.com/playit)
+###### [linux](http://leone-dev.com/playit) soon
+###### [mac](http://leone-dev.com/playit) soon
 
 # Patch note
 
 ## 0.0.2
 
-### Core
+#### Core
 
 * Auto update
 
-### Controller
+#### Controller
 
 * Playlist delete item
-
 * basic action play, pause, next, prev
 
-### Search engine
+#### Search engine
 
 * Youtube : added item picture
 
 ## 0.0.1
 
-### Core
+#### Core
 
 * play movie
 
-### Controller
+#### Controller
 
 * Playlist delete item
-
 * basic action play, pause, next, prev
+
+#### Search engine
 
 * Youtube
