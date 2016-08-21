@@ -1,9 +1,8 @@
 
 <p align="center"><img src="https://raw.githubusercontent.com/leon3s/playIT/master/app/public/img/icon.png"></img></p>
 
-<p align="center">
 
-# PLAYIT 
+<h1 align="center"> PLAYIT </h1> 
 Desktop application to controll audio / video player remotely using application or webpage on any device
 
 Open source and developped by [leone](http://leone-dev.com/)
@@ -44,4 +43,3 @@ Open source and developped by [leone](http://leone-dev.com/)
 #### Search engine
 
 * Youtube
-</p>
