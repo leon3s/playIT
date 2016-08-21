@@ -1,6 +1,6 @@
 img[src$="logo-center"] {
   display:block;
-  margin: auto auto;
+  margin: 50% auto;
 }
 ![alt tag](https://raw.githubusercontent.com/leon3s/playIT/master/app/public/img/icon.png?style="logo-center")
 # PLAYIT 
