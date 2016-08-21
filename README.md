@@ -1,10 +1,6 @@
 
 
-<img src="https://raw.githubusercontent.com/leon3s/playIT/master/app/public/img/icon.png" align="center"
-
->
-	
-</img>
+<img src="https://raw.githubusercontent.com/leon3s/playIT/master/app/public/img/icon.png" align="center"></img>
 
 
 # PLAYIT 
