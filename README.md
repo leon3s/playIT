@@ -36,15 +36,15 @@ Open source and developped by </br> <a href="http://leone-dev.com/"> leone devel
 
 <h2 align="center"> 0.0.1 </h2>
 
-<h3 align="center"> Core
+<h3 align="center"> Core </h3>
 
-* play movie
+<p align="center"> play movie
 
 <h3 align="center"> Controller </h3>
 
-* Playlist delete item
-* basic action play, pause, next, prev
+<p align="center"> Playlist delete item </p>
+<p align="center"> basic action play, pause, next, prev </p>
 
 <h3 align="center"> Search engine </h3>
 
-* Youtube
+<p align="center"> Youtube </p>
