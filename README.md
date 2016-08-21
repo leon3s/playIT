@@ -18,46 +18,18 @@ Open source and developped by </br> <a href="http://leone-dev.com/"> leone devel
  mac is comming soon </p>
 
 <h1 align="center"> Patch note </h1>
-
-	<h2 align="center">
-		0.0.2
-	<h2>
-
-		<h3 align="center">
-			Core
-		</h3>
-			<p align="center"> Auto update </p>
-
-		<h3 align="center">
-			Controller
-		</h3>
-			<p align="center">
-				Playlist delete item
-			</p>
-			<p align="center">
-				basic action play, pause, next, prev
-			</p>
-
-		<h3 align="center">
-			Search engine
-		</h3>
-			<p align="center">
-				Youtube : added item picture
-			<p>
-
-<h2 align="center">
-	0.0.1
-</h2>
-
-	<h3 align="center"> Core </h3>
-
-<p align="center"> play movie
-
+<h2 align="center"> 0.0.2 <h2>
+<h3 align="center"> Core </h3>
+<p align="center"> Auto update </p>
 <h3 align="center"> Controller </h3>
-
+<p align="center"> basic action onlick player timeline </p>
+<h3 align="center"> Search engine </h3>
+<p align="center"> Youtube : added item picture <p>
+<h2 align="center"> 0.0.1 </h2>
+<h3 align="center"> Core </h3>
+<p align="center"> play movie
+<h3 align="center"> Controller </h3>
 <p align="center"> Playlist delete item </p>
 <p align="center"> basic action play, pause, next, prev </p>
-
 <h3 align="center"> Search engine </h3>
-
 <p align="center"> Youtube </p>
