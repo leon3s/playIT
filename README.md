@@ -11,15 +11,15 @@ Open source and developped by [leone](http://leone-dev.com/)
 # Patch note
 ## 0.0.2
 #### Core
-- Auto update
+- Auto update __
 #### Controller
 - Playlist delete item
-- basic action play, pause, next, prev
+- basic action play, pause, next, prev __
 #### Search engine
-- Youtube : added item picture
+- Youtube : added item picture __
 ## 0.0.1
 #### Core
-- play movie
+- play movie __
 #### Controller
 - Playlist delete item
 - basic action play, pause, next, prev
