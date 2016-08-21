@@ -1,8 +1,12 @@
-img[src$="logo-center"] {
-  display:block;
-  margin: 50% auto;
-}
-![alt tag](https://raw.githubusercontent.com/leon3s/playIT/master/app/public/img/icon.png?style="logo-center")
+
+
+<img src="https://raw.githubusercontent.com/leon3s/playIT/master/app/public/img/icon.png" align="center"
+
+>
+	
+</img>
+
+
 # PLAYIT 
 Desktop application to controll audio / video player remotely using application or webpage on any device
 
