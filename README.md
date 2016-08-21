@@ -13,9 +13,9 @@ Open source and developped by </br> <a href="http://leone-dev.com/"> leone devel
 
 <h1 align="center"> Download </h1>
 
-<p align="center"> For windows you can download msi <a href="http://leone-dev.com/playit"> here </a> </p>
-<p align="center"> linux is comming soon </p>
-<p align="center"> mac is comming soon </p>
+<p align="center"> For windows you can download msi <a href="http://leone-dev.com/playit"> here </a> </br>
+ linux is comming soon </br>
+ mac is comming soon </p>
 
 <h1 align="center"> Patch note </h1>
 
@@ -23,11 +23,11 @@ Open source and developped by </br> <a href="http://leone-dev.com/"> leone devel
 
 <h4 align="center"> Core </h4>
 
-<p align="center">
-<li align="center">
+<ul align="center">
+	<li>
 		Auto update
-</li>
-</p>
+	</li>
+</ul>
 
 #### Controller
 
