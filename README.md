@@ -3,14 +3,16 @@
 
 
 <h1 align="center"> PLAYIT </h1> 
-Desktop application to controll audio / video player remotely using application or webpage on any device
 
-Open source and developped by [leone](http://leone-dev.com/)
+<p align="center">Desktop application to controll audio / video player remotely using application or webpage on any device
 
-# Download
-###### For windows you can download msi [here](http://leone-dev.com/playit)
-###### [linux](http://leone-dev.com/playit) soon
-###### [mac](http://leone-dev.com/playit) soon
+Open source and developped by </br> [leone developpement](http://leone-dev.com/)<p>
+
+<h1 align="center"> Download </h1>
+
+<p align="center"> For windows you can download msi [here](http://leone-dev.com/playit) </p>
+<p align="center"> [linux](http://leone-dev.com/playit) soon </p>
+<p align="center"> [mac](http://leone-dev.com/playit) soon </p>
 
 # Patch note
 
