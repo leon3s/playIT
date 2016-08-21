@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>        
+        <!-- META SECTION -->
+        <title>PLAY IT</title>            
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta author="leone"/>
+        <base href="/"> 
+        <!-- END META SECTION -->
+        <!-- CSS INCLUDE -->        
+        <link rel="stylesheet" type="text/css" href="/css/dash.css"/>
+        <link rel="stylesheet" type="text/css" href="/js/plugins/sweetalert/sweetalert.css"/>
+        <link rel="apple-touch-icon" sizes="57x57" href="/favicons/apple-icon-57x57.png">
+        <link rel="apple-touch-icon" sizes="60x60" href="/favicons/apple-icon-60x60.png">
+        <link rel="apple-touch-icon" sizes="72x72" href="/favicons/apple-icon-72x72.png">
+        <link rel="apple-touch-icon" sizes="76x76" href="/favicons/apple-icon-76x76.png">
+        <link rel="apple-touch-icon" sizes="114x114" href="/favicons/apple-icon-114x114.png">
+        <link rel="apple-touch-icon" sizes="120x120" href="/favicons/apple-icon-120x120.png">
+        <link rel="apple-touch-icon" sizes="144x144" href="/favicons/apple-icon-144x144.png">
+        <link rel="apple-touch-icon" sizes="152x152" href="/favicons/apple-icon-152x152.png">
+        <link rel="apple-touch-icon" sizes="180x180" href="/favicons/apple-icon-180x180.png">
+        <link rel="icon" type="image/png" sizes="192x192"  href="/favicons/android-icon-192x192.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicons/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="96x96" href="/favicons/favicon-96x96.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicons/favicon-16x16.png">
+        <link rel="manifest" href="/favicons/manifest.json">
+        <meta name="msapplication-TileColor" content="#ffffff">
+        <meta name="msapplication-TileImage" content="/favicons/ms-icon-144x144.png">
+        <meta name="theme-color" content="#ffffff">
+        <!-- EOF CSS INCLUDE -->    
+        <script type="text/javascript" src="js/plugins/jquery/jquery.min.js"></script>
+        <script type="text/javascript" src="js/plugins/jquery/jquery-ui.min.js"></script>
+        <script type="text/javascript" src="js/plugins/bootstrap/bootstrap.min.js"></script>        
+        <script type="text/javascript" src="js/plugins/bootstrap/bootstrap.min.js"></script>   
+
+        <script type='text/javascript' src='/js/plugins/socket.io/socket.io.min.js'></script>
+        <script type='text/javascript' src='/js/plugins/angular.js/angular.min.js'></script>
+        <script type='text/javascript' src='/js/plugins/angular.js/angular-route.min.js'></script>                              
+    </head>
+    <body ng-app="streame">
+        <!-- START PAGE CONTAINER -->
+        <div class="page-container page-navigation-top page-navigation-top-fixed">            
+            <!-- PAGE CONTENT -->
+            <div class="page-content">
+                
+                <!-- START X-NAVIGATION VERTICAL -->
+                <ul class="x-navigation x-navigation-horizontal" style="position:fixed;top:-5px;" id="topNavigation">
+                    <li class="xn-logo" style="background:white">
+                        <a href="/" style="top:0px;background:red!important;"><span style="color:white"> <strong> PLAY IT </strong> </span></a>     
+                    </li> 
+                        <a href="#" class="x-navigation-control"></a>
+                     <li>
+                        <a href="/"><span class="fa fa-gamepad"></span> <span class="xn-text"> Telecomande </span></a>
+                    </li>  
+                     <li>
+                        <a href="/youtube-search"><span class="fa "> <img src="/img/youtube.png" width="18" height="18"  style="margin-top:-2px"/></span> <span class="xn-text"> recherche youtube </span></a>
+                    </li>      
+                </ul>
