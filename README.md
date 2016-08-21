@@ -4,15 +4,18 @@
 
 <h1 align="center"> PLAYIT </h1> 
 
-<p align="center">Desktop application to controll audio / video player remotely using application or webpage on any device
+<p align="center">Desktop application to controll audio / video player remotely using application or webpage on any device.
 
-Open source and developped by </br> [leone developpement](http://leone-dev.com/)<p>
+
+<code> work with Electron 0.36.7 and webchimeraJS </code>
+
+Open source and developped by </br> <a href="http://leone-dev.com/" style="color:orange"> leone developpement </a><p>
 
 <h1 align="center"> Download </h1>
 
-<p align="center"> For windows you can download msi [here](http://leone-dev.com/playit) </p>
-<p align="center"> [linux](http://leone-dev.com/playit) soon </p>
-<p align="center"> [mac](http://leone-dev.com/playit) soon </p>
+<p align="center"> For windows you can download msi <a href="http://leone-dev.com/playit"> here </a> </p>
+<p align="center"> linux is comming soon (but you can clone the dep and hack it)</p>
+<p align="center"> mac is comming soon (but you can clone the dep and hack it)</p>
 
 # Patch note
 
