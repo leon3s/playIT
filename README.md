@@ -9,7 +9,7 @@
 </br>
 working with Electron 0.36.7 and webchimeraJS
 </br>
-Open source and developped by </br> <a href="http://leone-dev.com/"> leone developpement </a><p>
+Open source and developped by </br> <a href="http://leone-dev.com/"> leone developpement </a></p>
 
 <h1 align="center"> Download </h1>
 
