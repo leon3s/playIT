@@ -1,7 +1,5 @@
 
-
-<img src="https://raw.githubusercontent.com/leon3s/playIT/master/app/public/img/icon.png" align="center"></img>
-
+<p align="center"><img src="https://raw.githubusercontent.com/leon3s/playIT/master/app/public/img/icon.png"></img></p>
 
 # PLAYIT 
 Desktop application to controll audio / video player remotely using application or webpage on any device
