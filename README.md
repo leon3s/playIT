@@ -19,34 +19,32 @@ Open source and developped by </br> <a href="http://leone-dev.com/"> leone devel
 
 <h1 align="center"> Patch note </h1>
 
-<h3 align="center"> 0.0.2 <h3>
+<h2 align="center"> 0.0.2 <h3>
 
-<h4 align="center"> Core </h4>
+<h3 align="center"> Core </h4>
 
-<p align="center" style="color:red">
-		Auto update
-</p>
+<p align="center"> Auto update </p>
 
-#### Controller
+<h3 align="center"> Controller </h4>
 
-* Playlist delete item
-* basic action play, pause, next, prev
+<p align="center"> Playlist delete item </p>
+<p align="center"> basic action play, pause, next, prev </p>
 
-#### Search engine
+<h3 align="center"> Search engine </h4>
 
-* Youtube : added item picture
+<p align="center"> Youtube : added item picture <p>
 
-## 0.0.1
+<h2 align="center"> 0.0.1 </h2>
 
-#### Core
+<h3 align="center"> Core
 
 * play movie
 
-#### Controller
+<h3 align="center"> Controller </h3>
 
 * Playlist delete item
 * basic action play, pause, next, prev
 
-#### Search engine
+<h3 align="center"> Search engine </h3>
 
 * Youtube
