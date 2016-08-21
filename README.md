@@ -9,18 +9,18 @@ Open source and developped by [leone](http://leone-dev.com/)
 .[mac](http://leone-dev.com/playit) soon
 
 # Patch note
-.## 0.0.2
-.#### Core
+-## 0.0.2
+..*#### Core
 - Auto update
-.#### Controller
+..*#### Controller
 - Playlist delete item
 - basic action play, pause, next, prev
-.#### Search engine
+..*#### Search engine
 - Youtube : added item picture
-.## 0.0.1
-.#### Core
+-## 0.0.1
+..*#### Core
 - play movie
-.#### Controller
+..*#### Controller
 - Playlist delete item
 - basic action play, pause, next, prev
 - Youtube
