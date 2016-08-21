@@ -1,4 +1,4 @@
-![alt tag] https://raw.githubusercontent.com/leon3s/playIT/master/app/public/img/icon.png "Logo Title Text 2"
+![alt tag](https://raw.githubusercontent.com/leon3s/playIT/master/app/public/img/icon.png)
 # PLAYIT 
 Desktop application to controll audio / video player remotely using application or webpage on any device
 
